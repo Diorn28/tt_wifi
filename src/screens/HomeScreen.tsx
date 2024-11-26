@@ -6,9 +6,12 @@ import {
   FlatList,
   TextInput,
   Alert,
-  StyleSheet, PermissionsAndroid,
+  StyleSheet,
+  PermissionsAndroid,
+  Platform,
 } from 'react-native';
 import WifiManager from 'react-native-wifi-reborn';
+import {request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 
 type WifiNetwork = {
   SSID: string;
@@ -21,8 +24,21 @@ const HomeScreen: React.FC = () => {
   const [selectedSSID, setSelectedSSID] = useState('');
   const [password, setPassword] = useState('');
 
-  const requestPermissions = async () => {
-    try {
+  const requestLocationPermission = async () => {
+    if (Platform.OS === 'ios') {
+      const status = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE);
+      if (status === RESULTS.GRANTED) {
+        console.log('Permission de localisation accordée');
+        return true;
+      } else {
+        Alert.alert(
+          'Permission refusée',
+          'Vous devez accorder la permission de localisation pour scanner les réseaux Wi-Fi.'
+        );
+        return false;
+      }
+    } else {
+      // Android: utilisez PermissionsAndroid comme dans votre code existant
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
         {
@@ -38,21 +54,17 @@ const HomeScreen: React.FC = () => {
         console.log('Permission de localisation accordée');
         return true;
       } else {
-        console.log('Permission de localisation refusée');
         Alert.alert(
           'Permission refusée',
           'Vous devez accorder la permission de localisation pour scanner les réseaux Wi-Fi.'
         );
         return false;
       }
-    } catch (err) {
-      console.warn(err);
-      return false;
     }
   };
 
   const scanWifi = async () => {
-    const permissionGranted = await requestPermissions();
+    const permissionGranted = await requestLocationPermission();
 
     if (!permissionGranted) {
       return;
