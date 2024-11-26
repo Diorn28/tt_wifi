@@ -1,13 +1,17 @@
-# Resolve react_native_pods.rb with node to allow for hoisting
+# Chargement du script React Native Pods avec gestion dynamique du chemin
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+# Définir la plateforme minimale iOS
+platform :ios, '12.0'
+
+# Prépare le projet React Native
 prepare_react_native_project!
 
+# Utilisation des Frameworks si spécifié
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
@@ -15,26 +19,40 @@ if linkage != nil
 end
 
 target 'tt_wifi3' do
+  # Configuration des modules natifs
   config = use_native_modules!
 
   use_react_native!(
     :path => config[:reactNativePath],
-    # An absolute path to your application root.
+    # Chemin absolu vers la racine de l'application
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  # Ajout des permissions nécessaires via react-native-permissions
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
+  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
+
+  # Cible pour les tests
   target 'tt_wifi3Tests' do
     inherit! :complete
-    # Pods for testing
+    # Pods pour les tests
   end
 
   post_install do |installer|
-    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+    # Post-installation pour les configurations React Native
     react_native_post_install(
       installer,
       config[:reactNativePath],
       :mac_catalyst_enabled => false,
-      # :ccache_enabled => true
     )
+
+    # Exclure arm64 des simulateurs pour éviter des problèmes de compilation
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      end
+    end
   end
 end
