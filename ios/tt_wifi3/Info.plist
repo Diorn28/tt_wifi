@@ -48,13 +48,12 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-    <string>Nous avons besoin de votre localisation pour scanner les réseaux Wi-Fi disponibles.</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Votre localisation est nécessaire pour se connecter aux réseaux Wi-Fi.</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Votre localisation est nécessaire pour se connecter aux réseaux Wi-Fi.</string>
-    <key>com.apple.developer.networking.HotspotConfiguration</key>
-    <true/>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Votre localisation est nécessaire pour scanner les réseaux Wi-Fi disponibles.</string>
+<key>NSLocationAlwaysUsageDescription</key>
+<string>Votre localisation est nécessaire pour se connecter automatiquement aux réseaux Wi-Fi.</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Votre localisation est nécessaire pour scanner et se connecter aux réseaux Wi-Fi.</string>
+
 </dict>
 </plist>
