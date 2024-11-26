@@ -2,7 +2,7 @@ platform :ios, '12.0' # Version minimale iOS requise
 
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 
-target 'YourProjectName' do
+target 'tt_wifi3' do
   config = use_native_modules!
 
   use_react_native!(
