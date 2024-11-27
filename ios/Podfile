@@ -10,11 +10,6 @@ target 'tt_wifi3' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  # Ajouter les permissions nécessaires pour react-native-wifi-reborn
-  permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
-  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
-
   post_install do |installer|
     react_native_post_install(installer, config[:reactNativePath])
 
