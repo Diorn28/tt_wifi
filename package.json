@@ -46,7 +46,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "postinstall": "react-native setup-ios-permissions && pod-install"
+    "postinstall": "pod-install"
   },
   "engines": {
     "node": ">=18"
