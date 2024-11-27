@@ -2,14 +2,6 @@
   "name": "tt_wifi3",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "lint": "eslint .",
-    "start": "react-native start",
-    "test": "jest",
-    "postinstall": "react-native setup-ios-permissions && pod-install"
-  },
   "dependencies": {
     "@react-navigation/native": "^7.0.4",
     "@react-navigation/stack": "^7.0.6",
@@ -47,6 +39,14 @@
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4",
     "pod-install": "0.1.38"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+    "postinstall": "react-native setup-ios-permissions && pod-install"
   },
   "engines": {
     "node": ">=18"
