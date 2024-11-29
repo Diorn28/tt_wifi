@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* tt_wifi3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tt_wifi3Tests.m */; };
-		0116BCC629A7916D0D5CF7DD /* libPods-tt_wifi3-tt_wifi3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D63E62CE4813946DD5BA9CFA /* libPods-tt_wifi3-tt_wifi3Tests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		13CEAC51514FD4BAE3F982B6 /* libPods-tt_wifi3-tt_wifi3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A003976B4255B9A62111EC1 /* libPods-tt_wifi3-tt_wifi3Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		AD19E58664642988BF1225A0 /* libPods-tt_wifi3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3C0276465832A3D6B25AA5 /* libPods-tt_wifi3.a */; };
+		927EE5D62727FD5C52FE8601 /* libPods-tt_wifi3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB477ECE0C5578137DCB7A0 /* libPods-tt_wifi3.a */; };
 		E2AC41802FF413F1A13EF859 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,7 @@
 		00E356EE1AD99517003FC87E /* tt_wifi3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tt_wifi3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* tt_wifi3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tt_wifi3Tests.m; sourceTree = "<group>"; };
+		02C780C908B910E808C4C3B6 /* Pods-tt_wifi3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3.release.xcconfig"; path = "Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* tt_wifi3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tt_wifi3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = tt_wifi3/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = tt_wifi3/AppDelegate.mm; sourceTree = "<group>"; };
@@ -38,14 +39,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = tt_wifi3/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = tt_wifi3/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = tt_wifi3/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		2DB418AB3135BACA1DF2ED0B /* Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig"; path = "Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3B3C0276465832A3D6B25AA5 /* libPods-tt_wifi3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tt_wifi3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63A026880691335D8C7A88A7 /* Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig"; path = "Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		79E0B77EA9241AC16899938C /* Pods-tt_wifi3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3.debug.xcconfig"; path = "Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3.debug.xcconfig"; sourceTree = "<group>"; };
+		4A003976B4255B9A62111EC1 /* libPods-tt_wifi3-tt_wifi3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tt_wifi3-tt_wifi3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E199AEEEAB9EDD0C9AADF1 /* Pods-tt_wifi3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3.debug.xcconfig"; path = "Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tt_wifi3/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F612325148AB382ECB241AD /* Pods-tt_wifi3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3.release.xcconfig"; path = "Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3.release.xcconfig"; sourceTree = "<group>"; };
-		D63E62CE4813946DD5BA9CFA /* libPods-tt_wifi3-tt_wifi3Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tt_wifi3-tt_wifi3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBF6EA9F1C0111E94EF7161 /* Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig"; path = "Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BBB477ECE0C5578137DCB7A0 /* libPods-tt_wifi3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tt_wifi3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE1CB48EF09977764B87095B /* Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig"; path = "Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0116BCC629A7916D0D5CF7DD /* libPods-tt_wifi3-tt_wifi3Tests.a in Frameworks */,
+				13CEAC51514FD4BAE3F982B6 /* libPods-tt_wifi3-tt_wifi3Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD19E58664642988BF1225A0 /* libPods-tt_wifi3.a in Frameworks */,
+				927EE5D62727FD5C52FE8601 /* libPods-tt_wifi3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				3B3C0276465832A3D6B25AA5 /* libPods-tt_wifi3.a */,
-				D63E62CE4813946DD5BA9CFA /* libPods-tt_wifi3-tt_wifi3Tests.a */,
+				BBB477ECE0C5578137DCB7A0 /* libPods-tt_wifi3.a */,
+				4A003976B4255B9A62111EC1 /* libPods-tt_wifi3-tt_wifi3Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79E0B77EA9241AC16899938C /* Pods-tt_wifi3.debug.xcconfig */,
-				9F612325148AB382ECB241AD /* Pods-tt_wifi3.release.xcconfig */,
-				63A026880691335D8C7A88A7 /* Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig */,
-				2DB418AB3135BACA1DF2ED0B /* Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig */,
+				77E199AEEEAB9EDD0C9AADF1 /* Pods-tt_wifi3.debug.xcconfig */,
+				02C780C908B910E808C4C3B6 /* Pods-tt_wifi3.release.xcconfig */,
+				EE1CB48EF09977764B87095B /* Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig */,
+				9FBF6EA9F1C0111E94EF7161 /* Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "tt_wifi3Tests" */;
 			buildPhases = (
-				8969725B98065A78C87B6C23 /* [CP] Check Pods Manifest.lock */,
+				B2A5F33C11DEC04A7C81CB02 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				B86F80D8D59946F2811F9DCD /* [CP] Embed Pods Frameworks */,
-				AC358DBED3D53503E6D3D4CE /* [CP] Copy Pods Resources */,
+				2C4CD92E7E410155376597C5 /* [CP] Embed Pods Frameworks */,
+				220EC7C8E3738AFB863917CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,13 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "tt_wifi3" */;
 			buildPhases = (
-				450D05563CBC10BA1A3ECBF2 /* [CP] Check Pods Manifest.lock */,
+				CA5919CDE8FBDBC3544A66C2 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5742C58CD0C01430B853A0B9 /* [CP] Embed Pods Frameworks */,
-				6E65F7066BC440638B459DAF /* [CP] Copy Pods Resources */,
+				A182EB7850A016CC27984C31 /* [CP] Embed Pods Frameworks */,
+				E8CE7EC7ECE5F6EB60CEEC8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,29 +269,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		450D05563CBC10BA1A3ECBF2 /* [CP] Check Pods Manifest.lock */ = {
+		220EC7C8E3738AFB863917CB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-tt_wifi3-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5742C58CD0C01430B853A0B9 /* [CP] Embed Pods Frameworks */ = {
+		2C4CD92E7E410155376597C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A182EB7850A016CC27984C31 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,24 +320,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6E65F7066BC440638B459DAF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8969725B98065A78C87B6C23 /* [CP] Check Pods Manifest.lock */ = {
+		B2A5F33C11DEC04A7C81CB02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,38 +342,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC358DBED3D53503E6D3D4CE /* [CP] Copy Pods Resources */ = {
+		CA5919CDE8FBDBC3544A66C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tt_wifi3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CE7EC7ECE5F6EB60CEEC8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B86F80D8D59946F2811F9DCD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3-tt_wifi3Tests/Pods-tt_wifi3-tt_wifi3Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tt_wifi3/Pods-tt_wifi3-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,7 +414,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63A026880691335D8C7A88A7 /* Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig */;
+			baseConfigurationReference = EE1CB48EF09977764B87095B /* Pods-tt_wifi3-tt_wifi3Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -441,7 +441,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DB418AB3135BACA1DF2ED0B /* Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig */;
+			baseConfigurationReference = 9FBF6EA9F1C0111E94EF7161 /* Pods-tt_wifi3-tt_wifi3Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -465,11 +465,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79E0B77EA9241AC16899938C /* Pods-tt_wifi3.debug.xcconfig */;
+			baseConfigurationReference = 77E199AEEEAB9EDD0C9AADF1 /* Pods-tt_wifi3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P95C6GRK5J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = tt_wifi3/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -493,11 +494,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F612325148AB382ECB241AD /* Pods-tt_wifi3.release.xcconfig */;
+			baseConfigurationReference = 02C780C908B910E808C4C3B6 /* Pods-tt_wifi3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P95C6GRK5J;
 				INFOPLIST_FILE = tt_wifi3/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -586,10 +588,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -658,10 +657,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
