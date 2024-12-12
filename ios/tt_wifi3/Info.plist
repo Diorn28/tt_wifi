@@ -54,6 +54,8 @@
 <string>Votre localisation est nécessaire pour se connecter automatiquement aux réseaux Wi-Fi.</string>
 <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 <string>Votre localisation est nécessaire pour scanner et se connecter aux réseaux Wi-Fi.</string>
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Le Bluetooth est nécessaire pour scanner et se aux Lahoco.</string>
 
 </dict>
 </plist>
