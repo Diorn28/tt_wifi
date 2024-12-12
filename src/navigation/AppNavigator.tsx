@@ -1,17 +1,31 @@
+// src/navigation/AppNavigator.tsx
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from '../screens/HomeScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import DeviceScanScreen from '../screens/DeviceScanScreen';
+import DeviceConnectedScreen from '../screens/DeviceConnectedScreen';
+import WiFiConfigurationScreen from '../screens/WiFiConfigurationScreen';
+import ConfigurationPendingScreen from '../screens/ConfigurationPendingScreen';
+import ConfigurationSuccessScreen from '../screens/ConfigurationSuccessScreen';
 
-const Stack = createStackNavigator();
+export type RootStackParamList = {
+  DeviceScan: undefined;
+  DeviceConnected: undefined;
+  WiFiConfiguration: undefined;
+  ConfigurationPending: undefined;
+  ConfigurationSuccess: undefined;
+};
 
-const AppNavigator = () => {
+const Stack = createNativeStackNavigator<RootStackParamList>();
+
+const AppNavigator: React.FC = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="DeviceScan" component={DeviceScanScreen} />
+      <Stack.Screen name="DeviceConnected" component={DeviceConnectedScreen} />
+      <Stack.Screen name="WiFiConfiguration" component={WiFiConfigurationScreen} />
+      <Stack.Screen name="ConfigurationPending" component={ConfigurationPendingScreen} />
+      <Stack.Screen name="ConfigurationSuccess" component={ConfigurationSuccessScreen} />
+    </Stack.Navigator>
   );
 };
 

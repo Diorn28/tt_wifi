@@ -18,6 +18,7 @@ prepare_react_native_project!
 setup_permissions([
     'LocationWhenInUse',
     'LocationAlways',
+    'Bluetooth'
 ])
 
 
