@@ -1,37 +1,46 @@
-# Définir la plateforme minimale pour iOS
-platform :ios, '15.1'
+def node_require(script)
+  # Resolve script with node to allow for hoisting
+  require Pod::Executable.execute_command('node', ['-p',
+    "require.resolve(
+      '#{script}',
+      {paths: [process.argv[1]]},
+    )", __dir__]).strip
+end
 
-# Inclure les scripts nécessaires pour React Native
-require_relative '../node_modules/react-native/scripts/react_native_pods'
+# Use it to require both react-native's and this package's scripts:
+node_require('react-native/scripts/react_native_pods.rb')
+node_require('react-native-permissions/scripts/setup.rb')
 
-# Préparer le projet React Native
+platform :ios, min_ios_version_supported
 prepare_react_native_project!
 
-# Activer ou non les frameworks dynamiques
+  # Configuration des permissions requises
+setup_permissions([
+    'LocationWhenInUse',
+    'LocationAlways',
+])
+
+
 linkage = ENV['USE_FRAMEWORKS']
 if linkage
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
 end
 
-# Définir les cibles du projet
 target 'tt_wifi3' do
   config = use_native_modules!
 
-  # Inclure les modules React Native
   use_react_native!(
     :path => config[:reactNativePath],
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  # Configuration des tests
   target 'tt_wifi3Tests' do
     inherit! :complete
-    # Inclure des Pods pour les tests si nécessaire
   end
 end
 
-# Script post-installation
 post_install do |installer|
   react_native_post_install(installer)
 end
+
